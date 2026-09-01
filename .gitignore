@@ -1,0 +1,9 @@
+node_modules/
+config.local.json
+*.log
+*.bak_*
+session-registry.json
+branches.json
+main-session.json
+last-active.json
+.memory/

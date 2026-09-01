@@ -1,0 +1,8 @@
+# dsh-plugin-feishu bundle patch: 注册飞书通讯插件到 DSH profile
+- insert:
+    - id: dsh-feishu
+      name: dsh-plugin-feishu
+      config:
+        appId: cli_YOUR_FEISHU_APP_ID
+        # appSecret 不在此存放; 插件从 env DSH_FEISHU_APP_SECRET 读取
+        allowedUsers: "ou_YOUR_OPEN_ID"

@@ -1,0 +1,9 @@
+{
+  "workdir": "/home/your-user/work",
+  "appId": "cli_YOUR_FEISHU_APP_ID",
+  "allowedUsers": "ou_YOUR_OPEN_ID（多个用逗号分隔）",
+  "mainSessionId": null,
+  "leafOverrides": {},
+  "leafWsRoot": "/home/your-user/FeishuTree",
+  "hermesEnvFile": ""
+}
