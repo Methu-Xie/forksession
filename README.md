@@ -1,72 +1,84 @@
-# dsh-plugin-feishu — DSH 飞书通讯插件
+# forksession 🌳
 
-借鉴 hermes 飞书通信架构，移植为 DSH 的 cordis 插件。
-架构：`FeishuAdapter → AgentLoop → ToolLayer → ApprovalFlow`，全程官方标准件。
+> 内容驱动的四级会话分类与分支机制 —— 让 AI 助手上的每一条消息，都长在该长的树枝上。
 
-## 架构（对齐 hermes）
-
-| hermes 组件 | 本插件 |
-|---|---|
-| plugins/platforms/feishu/adapter.py | `FeishuAdapter`（官方 `@larksuiteoapi/node-sdk` WebSocket 长连接） |
-| agent.conversation_loop | `AgentLoop`（DeepSeek function-calling 循环） |
-| exec approvals / authz | `ApprovalFlow`（系统级命令 → 飞书审批） |
-| tools (terminal/file) | `ToolLayer`（read_file / list_dir / write_file / exec_command） |
-
-## 文件结构
+forksession 是一个 **DSH（DeepSeek Harness）飞书插件**。它把飞书入口的全部消息自动分类到一棵 **L1→L4 会话树**上：同类话题永远续作同一片树叶，新话题按层次自动长出新叶——所有会话像树叶到树干一样**可分类、可追溯、可续接**。
 
 ```
-dsh-plugin-feishu/
-├── package.json          # cordis bundle 声明 (dsh.bundle.patch)
-├── cordis.patch.yml      # 插件注册 entry
-└── lib/
-    ├── index.js          # 插件入口 (apply/inject) + 独立运行 run()
-    ├── run.mjs           # 独立运行入口
-    ├── agent-loop.js     # DeepSeek function-calling 循环
-    └── tools.js          # 工具层 + 系统级命令拦截
+L1 主干：飞书串联主对话（纯显示流，不加载上下文）
+└─ L2 树干：任务类型（开发 / 运维 / 查询 / 商业 / 法务 / 学习 …）→ 对应独立工作区
+   └─ L3 树枝：领域（DSH插件开发 / 酒店尽调 / …）
+      └─ L4 树叶：具体项目（forksession开发 / 海峡奥体全季 / …）→ 持久工作会话
 ```
 
-## 功能
+## 核心能力
 
-- **飞书收发**：官方 SDK WebSocket 长连接（事件订阅 im.message.receive_v1）
-- **工具调用**：读文件 / 列目录 / 写文件 / 执行命令（DeepSeek 自主决策）
-- **权限策略**：除系统级修改外全开放；系统级命令 → 飞书审批（用户回复【批准】/【拒绝】）
-- **多用户**：按 open_id 白名单响应（`allowedUsers` 配置）
+- **自动建叶**：消息内容驱动，无需任何手动指令——新话题自动补全 L2→L3→L4 链路并创建树叶会话（独立工作区、规范命名）
+- **语义续接**：无明确新项目名词的消息默认延续当前对话；"把第 3 章展开"这类跟进准确回到同一片树叶
+- **复合消息拆解**：一条消息 15 个方向？自动拆成子项、分发到对应树叶并行处理、逐项回报
+- **树叶记忆**：每片树叶一份记忆文件；长叶会话的旧轮次自动压缩回收进记忆，新会话带记忆重生（hermes 式记忆机制）
+- **树叶画布**：可视化看板——树形逐级钻取、路由脉冲实时直播、时间轴回放树的生长
+- **治理安全**：归档会话只读不可自动触碰；主会话纯显示流（零 LLM 开销）；外部渠道（CLI/headless）会话自动收编
 
-## 运行方式
+## 消息裁定链
 
-### 1. 独立运行（验证/开发）
+```
+📥 入站镜像主干（显示流）
+ → 显式项目名词（静态规则权威命中）
+ → 延续优先（60 分钟窗，关联性二判定）
+ → 语义路由（指纹快通道 → LLM 判定：续作 / 新叶 / 闲聊）
+ → L2 分类会话兜底
+```
+
+## 快速开始
 
 ```bash
-cd dsh-plugin-feishu
-node lib/run.mjs
+# 1. 安装依赖
+npm install
+
+# 2. 配置（真实值不进仓库）
+cp config.example.json config.local.json
+# 编辑 config.local.json: 飞书 appId / 授权用户 / 工作区路径…
+export DSH_FEISHU_APP_SECRET=<你的飞书应用密钥>
+
+# 3. 注册到 DSH profile
+cp cordis.patch.example.yml cordis.patch.yml   # 按注释填写
+# 以 patched profile 启动 dsh web 即可
 ```
 
-### 2. cordis 插件（已注册到 DSH web profile）
+## 飞书指令
 
-- 插件已 symlink 到 `~/.dsh/profiles/node_modules/dsh-plugin-feishu`
-- web profile 的 `package.json` bundles 已添加 `dsh-plugin-feishu`
-- 插件自带 `cordis.patch.yml` 注册 entry（id: dsh-feishu）
-- **重启 DSH web 后生效**（`dsh web` 或 GUI 进程重启）
+| 指令 | 作用 |
+|---|---|
+| `/tree` | 查看四级分类树全景 |
+| `/trace <sessionId>` | 单会话溯源（沿父链追根到主干） |
+| `/fork <任务>` | 手动 fork 专项分支（继承主干上下文） |
+| `/branches` | 列出活跃分支 |
+| `/setmain <sessionId>` | 热切换 L1 主干会话 |
 
-## 配置
+其余一切（分类、建叶、续接、拆解、记忆、轮换）**全自动**。
 
-| 配置项 | 来源 | 默认 |
-|---|---|---|
-| appId | cordis config / env DSH_FEISHU_APP_ID | cli_YOUR_FEISHU_APP_ID |
-| appSecret | env DSH_FEISHU_APP_SECRET / config / 默认 | (内置) |
-| allowedUsers | cordis config / env DSH_FEISHU_ALLOWED_USERS | 当前用户 open_id |
+## 项目结构
 
-## 已验证（2026-08-18）
+```
+lib/
+├── index.js             # 插件主体（路由/建叶/复合拆解/镜像/清扫）
+├── session-registry.js  # 四级分类注册表（TAXONOMY + 动态节点 + 落位元数据）
+├── leaf-memory.js       # 树叶记忆文件 + 压缩轮换 seed 构造
+├── root-branch.js       # 分支存储与指纹匹配（2-gram Jaccard）
+├── classify-rules.js    # L2 正则分类规则
+├── agent-loop.js        # 轻量 LLM 调用（语义路由/记忆压缩）
+├── context-manager.js   # 上下文 token 预算压缩
+├── tools.js             # 工具层（文件/命令）
+└── config.js            # 本地配置集中入口（脱敏边界）
+```
 
-- ✅ 官方 SDK WebSocket 连接就绪
-- ✅ 消息接收（用户飞书消息实时捕获）
-- ✅ agent 循环（DeepSeek function-calling）
-- ✅ 工具调用（read_file 读取文件并总结）
-- ✅ **审批流端到端**：用户发"执行 sudo whoami" → 审批询问 → 用户【批准】→ 执行返回 root → 回复结果
-- ✅ cordis 配置合成（`dsh --profile web --dump-config` 显示 dsh-feishu entry）
+## 隐私与脱敏
 
-## 注意事项
+所有本地值（appId、用户 ID、会话 ID、路径）统一走 `lib/config.js`：
+`config.local.json`（git 忽略）> 环境变量 > 占位默认。`appSecret` 仅存在于环境变量。
+仓库内**不含任何真实本地信息**。
 
-- 长连接为集群模式：同一 app 同时只能有一个活跃客户端收消息（独立实例与 cordis 实例不能并存）
-- appSecret 不在 cordis.patch.yml 存放；DSH web 进程需 env 提供 DSH_FEISHU_APP_SECRET（或接受内置默认）
-- 工具执行 cwd 默认工作区，命令超时 60s
+## License
+
+ISC
