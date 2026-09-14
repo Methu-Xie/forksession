@@ -7,3 +7,4 @@ branches.json
 main-session.json
 last-active.json
 .memory/
+routing-decisions.jsonl
