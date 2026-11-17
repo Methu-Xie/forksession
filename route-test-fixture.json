@@ -1,0 +1,1375 @@
+{
+ "sessions": {
+  "session-08f71d13-6996-4e2e-abad-d0b09c41bbd4": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "web",
+   "createdAt": 1786983635062,
+   "lastActiveAt": 1787292718311,
+   "note": "前 L1 主干（2026-08-21 卸任，转为普通 web 会话）",
+   "status": "archived"
+  },
+  "session-0b123fe9-a7a3-498a-9349-fce557b111d9": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "backfill",
+   "createdAt": 1787058617800,
+   "lastActiveAt": 1787292718312,
+   "note": "未分类",
+   "status": "archived"
+  },
+  "session-db73c5f9-7d36-46d1-bb96-5b624806d5fd": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "backfill",
+   "createdAt": 1787059399842,
+   "lastActiveAt": 1787292718312,
+   "note": "未分类",
+   "status": "archived"
+  },
+  "session-d299d271-f7dd-4218-9c94-c6b116052d58": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "backfill",
+   "createdAt": 1787061632617,
+   "lastActiveAt": 1787292718312,
+   "note": "未分类",
+   "status": "archived"
+  },
+  "feishu-query-2026-08-18": {
+   "path": [
+    "root",
+    "query"
+   ],
+   "parent": null,
+   "origin": "feishu",
+   "createdAt": 1787064785960,
+   "lastActiveAt": 1787295493946,
+   "status": "archived"
+  },
+  "feishu-feishu-2026-08-18": {
+   "path": [
+    "root",
+    "feishu"
+   ],
+   "parent": null,
+   "origin": "feishu",
+   "createdAt": 1787064822490,
+   "lastActiveAt": 1787292718312,
+   "status": "archived"
+  },
+  "feishu-dev-2026-08-18": {
+   "path": [
+    "root",
+    "dev"
+   ],
+   "parent": null,
+   "origin": "feishu",
+   "createdAt": 1787064934103,
+   "lastActiveAt": 1787292718313,
+   "status": "archived"
+  },
+  "feishu-sys-2026-08-18": {
+   "path": [
+    "root",
+    "sys"
+   ],
+   "parent": null,
+   "origin": "feishu",
+   "createdAt": 1787065154535,
+   "lastActiveAt": 1787292718313,
+   "status": "archived"
+  },
+  "feishu-dev-2026-08-19": {
+   "path": [
+    "root",
+    "dev"
+   ],
+   "parent": null,
+   "origin": "feishu",
+   "createdAt": 1787106828971,
+   "lastActiveAt": 1787293894461,
+   "status": "archived"
+  },
+  "feishu-sys-2026-08-19": {
+   "path": [
+    "root",
+    "sys"
+   ],
+   "parent": null,
+   "origin": "feishu",
+   "createdAt": 1787107103404,
+   "lastActiveAt": 1787292718313,
+   "status": "archived"
+  },
+  "feishu-chat-2026-08-19": {
+   "path": [
+    "root",
+    "chat"
+   ],
+   "parent": null,
+   "origin": "feishu",
+   "createdAt": 1787107535157,
+   "lastActiveAt": 1787304631523,
+   "status": "archived"
+  },
+  "ad4c052f-6be0-4ac8-8db1-dc9ddd27ad29": {
+   "path": [
+    "root",
+    "feishu"
+   ],
+   "parent": "feishu-feishu-2026-08-18",
+   "origin": "subagent",
+   "createdAt": 1787287008502,
+   "lastActiveAt": 1787292718313,
+   "note": "继承父会话路径",
+   "status": "archived"
+  },
+  "b4b982e2-93da-4be4-8f72-4d4bbe5ef8da": {
+   "path": [
+    "root",
+    "feishu"
+   ],
+   "parent": "feishu-feishu-2026-08-18",
+   "origin": "subagent",
+   "createdAt": 1787287683448,
+   "lastActiveAt": 1787292718314,
+   "note": "继承父会话路径",
+   "status": "archived"
+  },
+  "9e8f60ad-1cb8-4464-b9b2-ddbf3458fc1b": {
+   "path": [
+    "root",
+    "chat"
+   ],
+   "parent": "feishu-chat-2026-08-19",
+   "origin": "subagent",
+   "createdAt": 1787288010679,
+   "lastActiveAt": 1787292718314,
+   "note": "继承父会话路径",
+   "status": "archived"
+  },
+  "9c3321e7-4336-4d10-a6ad-dbd79551f07d": {
+   "path": [
+    "root",
+    "dev",
+    "dsh-plugin-dev",
+    "forksession"
+   ],
+   "parent": "session-08f71d13-6996-4e2e-abad-d0b09c41bbd4",
+   "origin": "subagent",
+   "createdAt": 1787288236336,
+   "lastActiveAt": 1787292718314,
+   "note": "项目级路由落地专项会话（fork 自主会话）",
+   "status": "archived"
+  },
+  "session-92b9cece-2530-431e-8b20-d726f641c777": {
+   "path": [
+    "root",
+    "dev",
+    "dsh-plugin-dev",
+    "forksession"
+   ],
+   "parent": null,
+   "origin": "web",
+   "createdAt": 1787290536490,
+   "lastActiveAt": 1794749384843,
+   "note": "已轮换 → session-92b9cece-2530-431e-8b20-d726f641c777-r2（记忆已回收进 /home/methu/FeishuTree/软件开发/.memory/DSH插件开发-forksession开发.md）",
+   "tag": "DSH插件开发-forksession开发",
+   "desc": "主会话上下文机制：索引目录/会话映射表/精简轮次",
+   "status": "archived",
+   "namingLegacy": true
+  },
+  "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "web",
+   "createdAt": 1787295045648,
+   "lastActiveAt": 1794891022062,
+   "note": "web 主会话（主干）"
+  },
+  "session-8131bc1f-8675-406e-876d-8565888ff5e9": {
+   "path": [
+    "root",
+    "query"
+   ],
+   "parent": "feishu-query-2026-08-18",
+   "origin": "subagent",
+   "createdAt": 1787296394562,
+   "lastActiveAt": 1787296394562,
+   "note": "fork 自 query 会话（回填）",
+   "status": "archived"
+  },
+  "fork-商业尽调-0821-1519": {
+   "path": [
+    "root",
+    "business"
+   ],
+   "parent": null,
+   "origin": "fork",
+   "createdAt": 1787296748889,
+   "lastActiveAt": 1787296748889,
+   "note": "任务: 商业尽调",
+   "status": "archived"
+  },
+  "酒店尽调-海峡奥体全季": {
+   "path": [
+    "root",
+    "business",
+    "x-酒店尽调",
+    "x-海峡奥体全季"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1787301788612,
+   "lastActiveAt": 1794746917044,
+   "keyFacts": [
+    "海峡",
+    "奥体",
+    "全季",
+    "酒店",
+    "尽调"
+   ],
+   "note": "事件: 海峡奥体全季酒店尽调项目",
+   "tag": "酒店尽调-海峡奥体全季",
+   "desc": "海峡奥体全季酒店尽调: 标的情况/租约/P&L/竞争"
+  },
+  "专项事务-法律库运维": {
+   "path": [
+    "root",
+    "legal",
+    "legal-work",
+    "legal-db"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1787303084926,
+   "lastActiveAt": 1788063418328,
+   "keyFacts": [
+    "查下法律数据库",
+    "月司法解释入库了"
+   ],
+   "note": "事件: 法律数据库运维（本家归位静态叶, id 为创建时遗留）（已由定名叶 法务工作-法律数据库 接任, 归档）",
+   "namingLegacy": true,
+   "status": "archived"
+  },
+  "合同纠纷-谢光亮诉倪隽": {
+   "path": [
+    "root",
+    "legal",
+    "x-合同纠纷",
+    "x-谢光亮诉倪隽"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1787306950657,
+   "lastActiveAt": 1789360359107,
+   "keyFacts": [
+    "那里找一下",
+    "谢光亮诉倪隽委托",
+    "合同纠纷",
+    "这个按键",
+    "hermes"
+   ],
+   "note": "事件: 去hermes那里找一下“谢光亮诉倪隽委托合同纠纷”这个按键",
+   "tag": "合同纠纷-谢光亮诉倪隽",
+   "desc": "合同纠纷-谢光亮诉倪隽: 案件材料/进展跟踪/开庭准备"
+  },
+  "商铺尽调-二手商铺投资": {
+   "path": [
+    "root",
+    "business",
+    "x-商铺尽调",
+    "x-二手商铺投资"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1787678063326,
+   "lastActiveAt": 1789360359738,
+   "keyFacts": [
+    "帮我写一份二手商",
+    "铺投资的尽调清单"
+   ],
+   "note": "事件: 帮我写一份二手商铺投资的尽调清单",
+   "tag": "商铺尽调-二手商铺投资",
+   "desc": "二手商铺投资尽调：清单/回报率/税费/产权风险"
+  },
+  "司法解释-法律数据库入库": {
+   "path": [
+    "root",
+    "legal",
+    "x-司法解释",
+    "x-法律数据库入库"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1787678437438,
+   "lastActiveAt": 1787678437438,
+   "keyFacts": [
+    "法律数据库的",
+    "月新司法解释入库"
+   ],
+   "note": "事件: 法律数据库的8月新司法解释入库",
+   "status": "archived"
+  },
+  "多模型接入-kimi接入": {
+   "path": [
+    "root",
+    "dev",
+    "llm-integration",
+    "kimi"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1787679035768,
+   "lastActiveAt": 1789360360303,
+   "keyFacts": [
+    "接口限流是多少",
+    "kimi",
+    "k3"
+   ],
+   "note": "事件: Kimi K3 的 API 怎么调用",
+   "tag": "多模型接入-kimi接入",
+   "desc": "多模型接入Kimi: API调用/限流/接口示例"
+  },
+  "记账原型-家庭记账小程序": {
+   "path": [
+    "root",
+    "business",
+    "x-记账原型",
+    "x-家庭记账小程序"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1787679048532,
+   "lastActiveAt": 1787679048532,
+   "keyFacts": [
+    "设计一个家庭记账",
+    "小程序的原型"
+   ],
+   "note": "事件: 设计一个家庭记账小程序的原型",
+   "status": "archived"
+  },
+  "申论写作-学习笔记框架": {
+   "path": [
+    "root",
+    "study",
+    "x-申论写作",
+    "x-学习笔记框架"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1787679071763,
+   "lastActiveAt": 1789360360985,
+   "keyFacts": [
+    "整理一份申论写作",
+    "的学习笔记框架"
+   ],
+   "note": "事件: 整理一份申论写作的学习笔记框架",
+   "tag": "申论写作-学习笔记框架",
+   "desc": "申论写作学习笔记: 框架/要点/笔记结构"
+  },
+  "票务关注-周杰伦演唱会": {
+   "path": [
+    "root",
+    "query",
+    "x-票务关注",
+    "x-周杰伦演唱会"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1787679102492,
+   "lastActiveAt": 1789360361606,
+   "keyFacts": [
+    "查下周杰伦演唱会",
+    "门票开票时间"
+   ],
+   "note": "事件: 周杰伦演唱会门票帮我关注一下",
+   "tag": "票务关注-周杰伦演唱会",
+   "desc": "周杰伦演唱会门票:开票提醒/场次核实/购票跟进"
+  },
+  "双Agent协作-DSH⇄Hermes": {
+   "path": [
+    "root",
+    "dev",
+    "dual-agent",
+    "dsh-hermes"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1787679113188,
+   "lastActiveAt": 1794725052267,
+   "keyFacts": [
+    "去把",
+    "内的",
+    "修复",
+    "wsl",
+    "hermes"
+   ],
+   "note": "已轮换 → 双Agent协作-DSH⇄Hermes-r2（记忆已回收进 /home/methu/FeishuTree/软件开发/.memory/双Agent协作-DSH⇄Hermes.md）",
+   "tag": "双Agent协作-DSH⇄Hermes",
+   "desc": "双Agent协作-DSH⇄Hermes: Hermes双向通信状态核查/日志/日志排查",
+   "status": "archived"
+  },
+  "a16628c2-57aa-4ecc-8b52-3c78ac3f46dc": {
+   "path": [
+    "root",
+    "sys"
+   ],
+   "parent": "session-508138fc-b6e4-4f47-9691-6a6c226623a3",
+   "origin": "subagent",
+   "createdAt": 1787680395510,
+   "lastActiveAt": 1787722018429,
+   "note": "DSH 升级分析子代理"
+  },
+  "session-508138fc-b6e4-4f47-9691-6a6c226623a3": {
+   "path": [
+    "root",
+    "sys"
+   ],
+   "parent": null,
+   "origin": "subagent",
+   "createdAt": 1787680395521,
+   "lastActiveAt": 1787722018425,
+   "note": "DSH 本体更新（web/CLI 发起, 已挂系统运维工作区）"
+  },
+  "session-9df7b846-f20d-47a0-86c2-c61132cf146e": {
+   "path": [
+    "root",
+    "sys"
+   ],
+   "parent": null,
+   "origin": "subagent",
+   "createdAt": 1787680395532,
+   "lastActiveAt": 1787722018429,
+   "note": "系统运维会话（已挂工作区）"
+  },
+  "session-bc2a5140-86ed-432a-8153-a29e89e822a8": {
+   "path": [
+    "root",
+    "sys"
+   ],
+   "parent": null,
+   "origin": "subagent",
+   "createdAt": 1787680395542,
+   "lastActiveAt": 1787722018429,
+   "note": "网络维护（已挂工作区）"
+  },
+  "session-42bd5d1b-c38f-42f1-bf6f-7fc698fb18f1": {
+   "path": [
+    "root",
+    "dev",
+    "dual-agent",
+    "dsh-hermes"
+   ],
+   "parent": null,
+   "origin": "subagent",
+   "createdAt": 1787721551966,
+   "lastActiveAt": 1787722018430,
+   "note": "Hermes→DSH 双向通信（环境保留通知）",
+   "status": "archived"
+  },
+  "session-5085ceae-78a3-4e38-91e9-2de846679cde": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1787804789421,
+   "lastActiveAt": 1787804789421,
+   "note": "外部渠道会话（自动收编）",
+   "status": "archived"
+  },
+  "session-e5c2cef5-301d-40a4-9f08-028723efdd51": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1787804789478,
+   "lastActiveAt": 1787804789478,
+   "note": "外部渠道会话（自动收编）",
+   "status": "archived"
+  },
+  "feishu-chat-2026-08-30": {
+   "path": [
+    "root",
+    "chat"
+   ],
+   "parent": null,
+   "origin": "feishu",
+   "createdAt": 1788062681853,
+   "lastActiveAt": 1794724865239
+  },
+  "申论写作-笔记框架整理": {
+   "path": [
+    "root",
+    "study",
+    "x-申论写作",
+    "x-笔记框架整理"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1788062682661,
+   "lastActiveAt": 1788062682661,
+   "keyFacts": [
+    "申论写作笔记开第",
+    "一章"
+   ],
+   "note": "事件: 申论写作笔记开第一章",
+   "status": "archived"
+  },
+  "打卡小程序-每日打卡": {
+   "path": [
+    "root",
+    "dev",
+    "x-打卡小程序",
+    "x-每日打卡"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1788062683592,
+   "lastActiveAt": 1789360243619,
+   "keyFacts": [
+    "设计个每日打卡小",
+    "程序"
+   ],
+   "note": "事件: 设计个每日打卡小程序"
+  },
+  "记账原型-家庭记账修改": {
+   "path": [
+    "root",
+    "dev",
+    "x-记账原型",
+    "x-家庭记账修改"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1788062685970,
+   "lastActiveAt": 1789360244413,
+   "keyFacts": [
+    "家庭记账那个原型",
+    "再改改"
+   ],
+   "note": "事件: 家庭记账那个原型再改改"
+  },
+  "专项事务-日志文件排查": {
+   "path": [
+    "root",
+    "sys",
+    "x-专项事务",
+    "x-日志文件排查"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1788063400869,
+   "lastActiveAt": 1788485556212,
+   "keyFacts": [
+    "把根目录下超过",
+    "的日志文件找出来"
+   ],
+   "note": "已轮换 → 专项事务-日志文件排查-r2（记忆已回收进 /home/methu/FeishuTree/系统运维/.memory/专项事务-日志文件排查.md）",
+   "status": "archived"
+  },
+  "民法典合同编-重点法条笔记": {
+   "path": [
+    "root",
+    "legal",
+    "x-民法典合同编",
+    "x-重点法条笔记"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1788063405151,
+   "lastActiveAt": 1789360244927,
+   "keyFacts": [
+    "整理一份民法典合",
+    "同编的重点法条笔"
+   ],
+   "note": "事件: 整理一份民法典合同编的重点法条笔记"
+  },
+  "照片重命名-Python脚本": {
+   "path": [
+    "root",
+    "dev",
+    "x-照片重命名",
+    "x-Python脚本"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1788063416800,
+   "lastActiveAt": 1789360245875,
+   "keyFacts": [
+    "写个",
+    "脚本批量重命名照",
+    "python"
+   ],
+   "note": "事件: 写个Python脚本批量重命名照片"
+  },
+  "法务工作-法律数据库": {
+   "path": [
+    "root",
+    "legal",
+    "legal-work",
+    "legal-db"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1788063417212,
+   "lastActiveAt": 1789360246251,
+   "keyFacts": [
+    "法律数据库",
+    "法律",
+    "数据库",
+    "运维",
+    "司法解释",
+    "向量检索"
+   ],
+   "note": "事件: 法律数据库的向量检索什么时候能修好"
+  },
+  "session-076b65ba-8f66-4a4b-afcd-3799eadfc3a2": {
+   "path": [
+    "root",
+    "dev",
+    "dsh-plugin-dev",
+    "forksession"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1788271147674,
+   "lastActiveAt": 1794833783302,
+   "note": "forksession 专用开发会话（2026-11-16 用户裁决: 叶身份自 92b9cece-r2 迁入, GUI 已命名 forksession开发）",
+   "tag": "插件开发-forksession",
+   "desc": "forksession 插件本体的开发与维护（Backlog/迭代/测试）",
+   "namingLegacy": true,
+   "cwdLegacy": true
+  },
+  "原则确认-治本治标执行": {
+   "path": [
+    "root",
+    "chat",
+    "x-原则确认",
+    "x-治本治标执行"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1788485455963,
+   "lastActiveAt": 1789360247094,
+   "keyFacts": [
+    "治本和治标都执行"
+   ],
+   "note": "事件: 治本和治标都执行"
+  },
+  "专项事务-日志文件排查-r2": {
+   "path": [
+    "root",
+    "sys",
+    "x-专项事务",
+    "x-日志文件排查"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1788485556212,
+   "lastActiveAt": 1789360247862,
+   "keyFacts": [
+    "把根目录下超过",
+    "的日志文件找出来"
+   ],
+   "note": "轮换自 专项事务-日志文件排查"
+  },
+  "会话分发-长测试纠偏": {
+   "path": [
+    "root",
+    "dev",
+    "x-会话分发",
+    "x-长测试纠偏"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1789344474292,
+   "lastActiveAt": 1789344474292,
+   "keyFacts": [
+    "把这个会话发入",
+    "核心目标",
+    "进行一轮长测试",
+    "继续对会话分发能",
+    "力进行测试纠偏",
+    "forknsession"
+   ],
+   "note": "事件: 把这个会话发入forknsession里\n核心目标，进行一轮长测试，继续对会话分发能力进行测试纠偏",
+   "status": "archived"
+  },
+  "447c920b-a2c6-4f23-b513-04a6334f69da": {
+   "path": [
+    "root",
+    "dev"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1789344579131,
+   "lastActiveAt": 1789344579131,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "b53fa3e6-5917-430f-9b64-a705ecbe0e4d": {
+   "path": [
+    "root",
+    "dev"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1789344579196,
+   "lastActiveAt": 1789344579196,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "6eace4db-a626-47b3-814a-42e301860f26": {
+   "path": [
+    "root",
+    "dev"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1789344639185,
+   "lastActiveAt": 1789344639185,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "3db85baf-f4ce-4986-bc53-77c3fbb08034": {
+   "path": [
+    "root",
+    "dev"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1789344699149,
+   "lastActiveAt": 1789344699149,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-0466b49d-47b0-45c3-acbd-32325a86d33e": {
+   "path": [
+    "root",
+    "business"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1789441292093,
+   "lastActiveAt": 1789441292093,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-fdb37f1a-5af1-4c1c-9451-ef47dc691ab3": {
+   "path": [
+    "root",
+    "query"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1789441352095,
+   "lastActiveAt": 1789441352095,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-a79e03bc-fab6-47ee-ab14-9b16ce430853": {
+   "path": [
+    "root",
+    "chat"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1789441352096,
+   "lastActiveAt": 1789441352096,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-3b629d5b-b484-43b6-8044-dc15b52c2813": {
+   "path": [
+    "root",
+    "study"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1789441352096,
+   "lastActiveAt": 1789441352096,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-79577c1b-c574-405a-8129-4b421f01ef31": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1789709652005,
+   "lastActiveAt": 1789709652005,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-53dc13f4-b1de-4cfc-aa2b-16ab9e5e5fb9": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1790647940934,
+   "lastActiveAt": 1790647940934,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-6fc28796-1ae6-4876-8031-d581471bd246": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1790647940935,
+   "lastActiveAt": 1790647940935,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "01b39c09-8a63-4500-853b-c6f585fae0a7": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1790648180946,
+   "lastActiveAt": 1790648180946,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "7ae7d368-1ea5-40f1-969e-4a355f0f8aee": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1790648180955,
+   "lastActiveAt": 1790648180955,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "9add5c8b-f612-4262-aa9f-63e13bfa636c": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1790648180962,
+   "lastActiveAt": 1790648180962,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-b212e29b-51c8-484c-8587-9d17ca677efc": {
+   "path": [
+    "root",
+    "dev"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1790652080944,
+   "lastActiveAt": 1790652080944,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-90ab6165-c0b4-4b34-8194-017ad25c2553": {
+   "path": [
+    "root",
+    "query"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1791704151612,
+   "lastActiveAt": 1791704151612,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-92e02999-b404-4c46-a055-fa8041c8bcb9": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1791704151615,
+   "lastActiveAt": 1791704151615,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-13c8f336-6853-4a95-a20d-c3c1617bbc13": {
+   "path": [
+    "root",
+    "query"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1792028572357,
+   "lastActiveAt": 1792028572357,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-930af113-92e9-437c-87fb-9bf806b799c9": {
+   "path": [
+    "root",
+    "sys"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1792244406269,
+   "lastActiveAt": 1792244406269,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-8e0534ac-4e21-46a0-bbf3-79d51823d8e8": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1792479789853,
+   "lastActiveAt": 1792479789853,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-0745172b-bfe6-4601-9cb0-af388104777e": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1793349208275,
+   "lastActiveAt": 1793349208275,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-21c024be-257f-47c7-b289-6c647a2cf487": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1793349208331,
+   "lastActiveAt": 1793349208331,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-f7288006-a8ef-43fa-a5f6-c68478864de8": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1793349208365,
+   "lastActiveAt": 1793349208365,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-b0b87a62-dcf7-47c5-a1f3-e21d78d2af16": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1793349208458,
+   "lastActiveAt": 1793349208458,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-2a7f326c-1fb7-4ab8-bf4b-5d74744092a7": {
+   "path": [
+    "root",
+    "study"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1793941089299,
+   "lastActiveAt": 1793941089299,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-0c1ca72e-d997-4400-8d32-c2a8ed9ce248": {
+   "path": [
+    "root",
+    "dev",
+    "dual-agent",
+    "dsh-hermes"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1793941089351,
+   "lastActiveAt": 1793941089351,
+   "note": "Hermes 双向通信（外部渠道自动收编）"
+  },
+  "session-4c653bc6-cbd7-4cd0-8ca3-de19557ea57c": {
+   "path": [
+    "root",
+    "sys"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1794109930092,
+   "lastActiveAt": 1794109930092,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-39220965-dfe7-4ec1-ba31-fcb055640fbe": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1794723791431,
+   "lastActiveAt": 1794723791431,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-85f625ef-cb39-4379-a20a-cb6b3f710491": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1794723911396,
+   "lastActiveAt": 1794731195947,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "双Agent协作-DSH⇄Hermes-r2": {
+   "path": [
+    "root",
+    "dev",
+    "dual-agent",
+    "dsh-hermes"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1794725052268,
+   "lastActiveAt": 1794728908458,
+   "keyFacts": [
+    "去把",
+    "内的",
+    "修复",
+    "wsl",
+    "hermes"
+   ],
+   "note": "已轮换 → 双Agent协作-DSH⇄Hermes-r3（记忆已回收进 /home/methu/FeishuTree/软件开发/.memory/双Agent协作-DSH⇄Hermes.md）",
+   "tag": "双Agent协作-DSH⇄Hermes",
+   "desc": "《系统运维》-hermes运维: WSL内hermes修复",
+   "status": "archived"
+  },
+  "双Agent协作-DSH⇄Hermes-r3": {
+   "path": [
+    "root",
+    "dev",
+    "dual-agent",
+    "dsh-hermes"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1794728908459,
+   "lastActiveAt": 1794729025441,
+   "keyFacts": [
+    "去把",
+    "内的",
+    "修复",
+    "wsl",
+    "hermes"
+   ],
+   "note": "轮换自 双Agent协作-DSH⇄Hermes-r2",
+   "tag": "双Agent协作-DSH⇄Hermes",
+   "desc": "DSH⇄Hermes 双Agent双向通信: hermes消息互发/通知收编/通信健康检查"
+  },
+  "feishu-dev-2026-11-15": {
+   "path": [
+    "root",
+    "dev"
+   ],
+   "parent": null,
+   "origin": "feishu",
+   "createdAt": 1794730418033,
+   "lastActiveAt": 1794730418033
+  },
+  "session-9fadec0a-1c11-4f59-833f-613a51547464": {
+   "path": [
+    "root"
+   ],
+   "parent": null,
+   "origin": "external",
+   "createdAt": 1794745095412,
+   "lastActiveAt": 1794745095412,
+   "note": "外部渠道会话（自动收编）"
+  },
+  "session-92b9cece-2530-431e-8b20-d726f641c777-r2": {
+   "path": [
+    "root",
+    "dev",
+    "dsh-plugin-dev",
+    "forksession"
+   ],
+   "parent": "session-2bb722b0-acfd-4476-be1a-aa7f0fb14f96",
+   "origin": "feishu-leaf",
+   "createdAt": 1794749384845,
+   "lastActiveAt": 1794749384845,
+   "note": "已归档: forksession 叶身份迁至 session-076b65ba（2026-11-16 用户裁决）; 历史保留只读",
+   "tag": "插件开发-forksession",
+   "desc": "forksession 插件本体的开发与维护（Backlog/迭代/测试）",
+   "namingLegacy": true
+  }
+ },
+ "nodes": {
+  "x-酒店尽调": {
+   "level": "L3",
+   "name": "酒店尽调",
+   "parent": "business",
+   "keyFacts": [
+    "海峡奥体全季酒店",
+    "尽调项目"
+   ],
+   "dynamic": true,
+   "createdAt": 1787299775810
+  },
+  "x-海峡奥体全季": {
+   "level": "L4",
+   "name": "海峡奥体全季",
+   "parent": "x-酒店尽调",
+   "keyFacts": [
+    "海峡奥体全季酒店",
+    "尽调项目"
+   ],
+   "dynamic": true,
+   "createdAt": 1787299775810
+  },
+  "x-合同纠纷": {
+   "level": "L3",
+   "name": "合同纠纷",
+   "parent": "legal",
+   "keyFacts": [
+    "合同纠纷"
+   ],
+   "dynamic": true,
+   "createdAt": 1787306950639
+  },
+  "x-谢光亮诉倪隽": {
+   "level": "L4",
+   "name": "谢光亮诉倪隽",
+   "parent": "x-合同纠纷",
+   "keyFacts": [
+    "谢光亮诉倪隽",
+    "那里找一下",
+    "谢光亮诉倪隽委托",
+    "合同纠纷",
+    "这个按键",
+    "hermes"
+   ],
+   "dynamic": true,
+   "createdAt": 1787306950639
+  },
+  "x-商铺尽调": {
+   "level": "L3",
+   "name": "商铺尽调",
+   "parent": "business",
+   "keyFacts": [
+    "商铺尽调"
+   ],
+   "dynamic": true,
+   "createdAt": 1787678063293
+  },
+  "x-二手商铺投资": {
+   "level": "L4",
+   "name": "二手商铺投资",
+   "parent": "x-商铺尽调",
+   "keyFacts": [
+    "二手商铺投资",
+    "帮我写一份二手商",
+    "铺投资的尽调清单"
+   ],
+   "dynamic": true,
+   "createdAt": 1787678063293
+  },
+  "x-申论写作": {
+   "level": "L3",
+   "name": "申论写作",
+   "parent": "study",
+   "keyFacts": [
+    "申论写作"
+   ],
+   "dynamic": true,
+   "createdAt": 1787679071728
+  },
+  "x-学习笔记框架": {
+   "level": "L4",
+   "name": "学习笔记框架",
+   "parent": "x-申论写作",
+   "keyFacts": [
+    "学习笔记框架",
+    "整理一份申论写作",
+    "的学习笔记框架"
+   ],
+   "dynamic": true,
+   "createdAt": 1787679071728
+  },
+  "x-票务关注": {
+   "level": "L3",
+   "name": "票务关注",
+   "parent": "query",
+   "keyFacts": [
+    "票务关注"
+   ],
+   "dynamic": true,
+   "createdAt": 1787679102450
+  },
+  "x-周杰伦演唱会": {
+   "level": "L4",
+   "name": "周杰伦演唱会",
+   "parent": "x-票务关注",
+   "keyFacts": [
+    "周杰伦演唱会",
+    "周杰伦演唱会门票",
+    "帮我关注一下"
+   ],
+   "dynamic": true,
+   "createdAt": 1787679102450
+  },
+  "x-打卡小程序": {
+   "level": "L3",
+   "name": "打卡小程序",
+   "parent": "dev",
+   "keyFacts": [
+    "打卡小程序"
+   ],
+   "dynamic": true,
+   "createdAt": 1788062683577
+  },
+  "x-每日打卡": {
+   "level": "L4",
+   "name": "每日打卡",
+   "parent": "x-打卡小程序",
+   "keyFacts": [
+    "每日打卡",
+    "设计个每日打卡小",
+    "程序"
+   ],
+   "dynamic": true,
+   "createdAt": 1788062683577
+  },
+  "x-记账原型": {
+   "level": "L3",
+   "name": "记账原型",
+   "parent": "dev",
+   "keyFacts": [
+    "记账原型"
+   ],
+   "dynamic": true,
+   "createdAt": 1788062685953
+  },
+  "x-家庭记账修改": {
+   "level": "L4",
+   "name": "家庭记账修改",
+   "parent": "x-记账原型",
+   "keyFacts": [
+    "家庭记账修改",
+    "家庭记账那个原型",
+    "再改改"
+   ],
+   "dynamic": true,
+   "createdAt": 1788062685953
+  },
+  "x-专项事务": {
+   "level": "L3",
+   "name": "专项事务",
+   "parent": "sys",
+   "keyFacts": [
+    "专项事务"
+   ],
+   "dynamic": true,
+   "createdAt": 1788063400853
+  },
+  "x-日志文件排查": {
+   "level": "L4",
+   "name": "日志文件排查",
+   "parent": "x-专项事务",
+   "keyFacts": [
+    "日志文件排查",
+    "把根目录下超过",
+    "的日志文件找出来"
+   ],
+   "dynamic": true,
+   "createdAt": 1788063400853
+  },
+  "x-民法典合同编": {
+   "level": "L3",
+   "name": "民法典合同编",
+   "parent": "legal",
+   "keyFacts": [
+    "民法典合同编"
+   ],
+   "dynamic": true,
+   "createdAt": 1788063405136
+  },
+  "x-重点法条笔记": {
+   "level": "L4",
+   "name": "重点法条笔记",
+   "parent": "x-民法典合同编",
+   "keyFacts": [
+    "重点法条笔记",
+    "整理一份民法典合",
+    "同编的重点法条笔"
+   ],
+   "dynamic": true,
+   "createdAt": 1788063405136
+  },
+  "x-照片重命名": {
+   "level": "L3",
+   "name": "照片重命名",
+   "parent": "dev",
+   "keyFacts": [
+    "照片重命名"
+   ],
+   "dynamic": true,
+   "createdAt": 1788063416785
+  },
+  "x-Python脚本": {
+   "level": "L4",
+   "name": "Python脚本",
+   "parent": "x-照片重命名",
+   "keyFacts": [
+    "Python脚本",
+    "写个",
+    "脚本批量重命名照",
+    "python"
+   ],
+   "dynamic": true,
+   "createdAt": 1788063416785
+  },
+  "x-原则确认": {
+   "level": "L3",
+   "name": "原则确认",
+   "parent": "chat",
+   "keyFacts": [
+    "原则确认"
+   ],
+   "dynamic": true,
+   "createdAt": 1788485455945
+  },
+  "x-治本治标执行": {
+   "level": "L4",
+   "name": "治本治标执行",
+   "parent": "x-原则确认",
+   "keyFacts": [
+    "治本治标执行",
+    "治本和治标都执行"
+   ],
+   "dynamic": true,
+   "createdAt": 1788485455945
+  },
+  "x-充电桩投资": {
+   "level": "L3",
+   "name": "充电桩投资",
+   "parent": "business",
+   "keyFacts": [
+    "充电桩投资"
+   ],
+   "dynamic": true,
+   "createdAt": 1794890229099
+  },
+  "x-项目评估": {
+   "level": "L4",
+   "name": "项目评估",
+   "parent": "x-充电桩投资",
+   "keyFacts": [
+    "项目评估",
+    "用户要评估一个新",
+    "能源汽车充电桩投",
+    "资项目",
+    "请按投资尽调打法",
+    "开展",
+    "先明确项目类型",
+    "公共快充站"
+   ],
+   "dynamic": true,
+   "createdAt": 1794890229099
+  }
+ }
+}
